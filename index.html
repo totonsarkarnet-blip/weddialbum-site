@@ -252,6 +252,7 @@ margin-top:30px;
   .tabs-section {
     padding: 2.5rem 5rem 0;
     animation: fadeUp 1s 0.3s ease both;
+    margin-top: -50px;
   }
   .tabs-divider {
     display: flex;
@@ -535,6 +536,7 @@ margin-top:30px;
 padding:5rem;
 }
 
+
 .recent-head{
 margin-bottom:2rem;
 }
@@ -563,12 +565,27 @@ grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
 gap:1rem;
 }
 
+
+
 .recent-img{
 width:100%;
 height:260px;
 object-fit:cover;
 cursor:pointer;
 transition:.5s;
+}
+
+@media (max-width:768px){
+
+.recent-gallery{
+grid-template-columns: repeat(2, 1fr);
+gap:10px;
+}
+
+.recent-img{
+height:180px;
+}
+
 }
 
 .recent-img:hover{
@@ -625,20 +642,7 @@ height:200px;
 
 }
 
-  /* Responsive */
-  @media (max-width: 768px) {
 
-html{
-transform:scale(0.45);
-transform-origin:top left;
-width:222%;
-}
-
-body{
-min-width:1200px;
-}
-
-}
 
 
 </style>
