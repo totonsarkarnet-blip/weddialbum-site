@@ -12,7 +12,7 @@ function scrollToGallery(){
 const designs = [];
 
 // Wedding images
-for(let i = 1; i <= 0; i++){
+for(let i = 1; i <= 6; i++){
   designs.push({
     src: `Wedding${i}.jpg`,
     title: `Wedding ${i}`,
