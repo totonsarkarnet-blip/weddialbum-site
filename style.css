@@ -52,6 +52,23 @@ body{
   flex-wrap: wrap; /* 🔥 important */
 }
 
+@media(max-width:768px){
+  .navbartext{
+    display: flex;
+    flex-direction: column;   /* logo উপরে, menu নিচে */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu{
+    justify-content: center;  /* menu center */
+    align-items: center;
+    margin-top: 8px;
+  }
+}
+
+
 .menu a {
   text-decoration: none;
   color: #ccc;
