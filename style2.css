@@ -81,6 +81,30 @@ body {
   color: #fff;
 }
 
+@media(max-width:768px){
+  .navbartext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    gap: 5px; /* 🔥 important: gap control */
+    padding-top: 5px; /* 🔥 কমিয়ে দাও */
+  }
+
+  .logo{
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu{
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px; /* 🔥 আগে 8px ছিল → কমাও */
+  }
+}
+
 @media(max-width: 768px){
 
   .navbar {
