@@ -18,7 +18,7 @@ function shuffleArray(array) {
 const designs = [];
 
 // Wedding images
-for(let i = 1; i <= 6; i++){
+for(let i = 1; i <= 14; i++){
   designs.push({
     src: `Wedding${i}.jpg`,
     title: `Wedding`,
@@ -28,7 +28,7 @@ for(let i = 1; i <= 6; i++){
 }
 
 // Prewedding images
-for(let i = 1; i <= 0; i++){
+for(let i = 1; i <= 2; i++){
   designs.push({
     src: `Prewedding${i}.jpg`,
     title: `Pre Wedding`,
