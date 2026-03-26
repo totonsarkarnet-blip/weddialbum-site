@@ -12,6 +12,102 @@ body {
     background: #0f172a;
     color: #e2e8f0;
     line-height: 1.6;
+    padding-top: 100px;
+}
+/* Navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  z-index: 9999;
+  box-sizing: border-box; /* 🔥 important */
+  justify-content: center;
+}
+ .navbartext{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:30px 20px;
+
+
+ }
+
+
+/* Logo */
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+   text-decoration: none;
+  
+}
+
+/* Menu */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 15px; /* কমাও */
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap; /* 🔥 important */
+}
+
+.menu a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #fff;
+}
+
+@media(max-width:768px){
+  .navbartext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    gap: 5px; /* 🔥 important: gap control */
+    padding-top: 5px; /* 🔥 কমিয়ে দাও */
+  }
+
+  .logo{
+    margin: 0;
+    padding: 0;
+   
+  }
+
+  .menu{
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px; /* 🔥 আগে 8px ছিল → কমাও */
+  }
+}
+
+@media(max-width: 768px){
+
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .menu {
+    gap: 10px;
+  }
+
+  .menu a {
+    font-size: 12px;
+  }
+
 }
 
 .container {
